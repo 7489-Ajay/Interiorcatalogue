@@ -1,0 +1,174 @@
+/* About Section */
+.about-section {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    padding: 60px 20px;
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .about-title {
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #f5f5f5;
+    text-transform: uppercase;
+    position: relative;
+  }
+  
+  .about-title::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 3px;
+    margin: 10px auto;
+    background: #ff6f61;
+    border-radius: 2px;
+  }
+  
+  .about-tagline {
+    font-size: 1.2rem;
+    color: #cccccc;
+    margin-bottom: 40px;
+    font-style: italic;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  /* Content Styling */
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  .about-card {
+    text-align: left;
+    animation: slideUp 1s ease-in-out;
+  }
+  
+  .about-card h3 {
+    font-size: 1.6rem;
+    color: #ff6f61;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .about-card h3:hover {
+    color: #ffa07a;
+    transform: scale(1.05);
+  }
+  
+  .about-card p,
+  .about-card ul {
+    font-size: 1rem;
+    color: #dddddd;
+    line-height: 1.7;
+  }
+  
+  .about-card ul {
+    padding-left: 20px;
+    list-style-type: '👉 ';
+  }
+  
+  /* Footer Section */
+  .about-footer {
+    margin-top: 50px;
+    font-size: 1rem;
+    color: #bbbbbb;
+  }
+  
+  .about-footer a {
+    color: #ff6f61;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .about-footer a:hover {
+    color: #ffa07a;
+  }
+  
+  /* Owner Image */
+  .owner-info {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .owner-photo {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 3px solid #ff6f61;
+    object-fit: cover;
+    margin-bottom: 10px;
+    transition: transform 0.4s ease;
+  }
+  
+  .owner-photo:hover {
+    transform: rotate(5deg) scale(1.1);
+  }
+  
+  .owner-name {
+    color: #eeeeee;
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+  .owner-name span {
+    font-size: 0.85rem;
+    color: #aaaaaa;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .about-title {
+      font-size: 2rem;
+    }
+  
+    .about-tagline {
+      font-size: 1rem;
+    }
+  
+    .about-content {
+      gap: 30px;
+      padding: 0 10px;
+    }
+  
+    .about-card h3 {
+      font-size: 1.4rem;
+    }
+  
+    .about-card p,
+    .about-card ul {
+      font-size: 0.95rem;
+    }
+  }
+  
+  

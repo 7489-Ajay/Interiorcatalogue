@@ -1,0 +1,111 @@
+/* Contact.css */
+
+/* Reset and base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html, body {
+    height: 100%;
+    scroll-behavior: smooth;
+  }
+  
+  /* Container 下移，避免被固定 Navbar 遮挡 */
+  .contact-container {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 60px 20px;
+    margin: 100px auto 40px;      /* ↑ 下移 100px，自动水平居中，下方留空 */
+    max-width: 600px;             /* 限制最大宽度，避免背景无限延伸 */
+    width: calc(100% - 40px);     /* 左右各留 20px 空白 */
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Logo 保持完整可见 */
+  .contact-logo {
+    width: 100px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+  }
+  .contact-logo:hover {
+    transform: scale(1.1) rotate(10deg);
+  }
+  
+  /* 标题和选项 */
+  .contact-heading {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    animation: slideIn 1s ease-out;
+  }
+  .contact-options {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    animation: fadeInUp 1.5s ease-out;
+  }
+  
+  /* 链接按钮 */
+  .contact-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 24px;
+    border: 1px solid #444;
+    border-radius: 8px;
+    background-color: #222;
+    transition: all 0.3s ease;
+  }
+  .contact-link:hover {
+    background-color: #007bff;
+    transform: scale(1.05);
+  }
+  
+  /* 图标 */
+  .icon {
+    font-size: 1.6rem;
+    transition: transform 0.3s ease;
+  }
+  .contact-link:hover .icon {
+    transform: rotate(20deg);
+  }
+  
+  /* 动画关键帧 */
+  @keyframes slideIn {
+    from { transform: translateY(-50px); opacity: 0; }
+    to   { transform: translateY(0);      opacity: 1; }
+  }
+  @keyframes fadeInUp {
+    from { transform: translateY(40px);  opacity: 0; }
+    to   { transform: translateY(0);     opacity: 1; }
+  }
+  
+  /* 小屏适配 */
+  @media (max-width: 768px) {
+    .contact-container {
+      margin: 120px auto 30px;
+      padding: 40px 15px;
+      max-width: 90%;
+    }
+    .contact-heading { font-size: 1.6rem; }
+    .contact-link { font-size: 1rem; padding: 12px 20px; }
+    .icon { font-size: 1.4rem; }
+  }
+  
+  @media (max-width: 480px) {
+    .contact-container {
+      margin: 140px auto 20px;
+      padding: 30px 10px;
+    }
+    .contact-heading { font-size: 1.4rem; }
+    .contact-link { font-size: 0.9rem; padding: 10px 18px; }
+    .icon { font-size: 1.3rem; }
+  }
+  
+  

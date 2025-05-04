@@ -1,0 +1,147 @@
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Main section */
+.home-section {
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+/* Hero image container */
+.hero-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  margin-bottom: 40px;
+  margin-top: 50px;
+}
+
+.hero-image {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  filter: brightness(0.5);
+  transition: all 0.4s ease-in-out;
+}
+
+/* Hero text */
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  max-width: 900px;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  font-size: 1.4rem;
+  line-height: 1.8;
+  font-weight: 700;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5); /* हल्का black background */
+  padding: 35px;
+  border-radius: 16px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.7);
+  text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease-in-out;
+  perspective: 1000px;
+}
+
+.hero-text:hover {
+  transform: translate(-50%, -50%) scale(1.03) rotateX(4deg) rotateY(-4deg);
+}
+
+/* Design gallery */
+.design-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-bottom: 30px;
+}
+
+.design-item img {
+  width: 90%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.design-item img:hover {
+  transform: scale(1.06) rotateZ(2deg);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.5);
+}
+
+/* Button style */
+.more-btn {
+  display: block;
+  margin: 0 auto 40px;
+  padding: 14px 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 30px;
+  background-color: #34495e;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.more-btn:hover {
+  background-color: #3e5a70;
+  transform: scale(1.07);
+}
+
+/* Responsive for tablets and mobile */
+@media (max-width: 768px) {
+  .hero-image {
+    height: 300px;
+  }
+
+  .hero-text {
+    font-size: 1rem;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.45); /* mobile पर और हल्का black */
+  }
+
+  .design-item img {
+    height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-image {
+    height: 250px;
+  }
+
+  .hero-text {
+    font-size: 0.85rem;
+    line-height: 1.4;
+    padding: 14px;
+    background: rgba(0, 0, 0, 0.4); /* smallest screens पर और हल्का black */
+  }
+
+  .design-gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .design-item img {
+    height: 160px;
+  }
+
+  .more-btn {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}
+
+
+
+
+
+  

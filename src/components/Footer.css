@@ -1,0 +1,146 @@
+/* Footer Styles */
+.footer {
+  background-color: #ffffff; /* Matching with navbar */
+  color: #121212; /* Text color to complement the background */
+  padding: 50px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow to give depth */
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.footer-logo {
+  max-width: 200px; /* Reduced size for the logo */
+}
+
+.footer-logo img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.footer-logo p {
+  font-size: 1rem;
+  color: #121212;
+  line-height: 1.6;
+  text-align: justify;
+  transition: color 0.3s ease;
+}
+
+.footer-logo p:hover {
+  color: #007BFF; /* Hover effect on the paragraph */
+}
+
+.footer-contact {
+  flex: 1;
+}
+
+.footer-contact h4 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+  color: #121212;
+  transition: color 0.3s ease;
+}
+
+.footer-contact h4:hover {
+  color: #007BFF; /* Hover effect on heading */
+}
+
+.footer-contact p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #121212;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.3s ease;
+}
+
+.footer-contact p:hover {
+  color: #007BFF; /* Hover effect on contact details */
+}
+
+.footer-links {
+  flex: 1;
+}
+
+.footer-links h4 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+  color: #121212;
+  transition: color 0.3s ease;
+}
+
+.footer-links h4:hover {
+  color: #007BFF; /* Hover effect on Quick Links heading */
+}
+
+.footer-links a {
+  font-size: 1rem;
+  color: #121212;
+  text-decoration: none;
+  margin-bottom: 8px;
+  display: block;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #007BFF; /* Shine effect on link hover */
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a {
+  font-size: 1.5rem;
+  color: #121212;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+  color: #007BFF; /* Shine effect on social icons */
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 1rem;
+  color: #121212;
+}
+
+.footer-bottom p {
+  margin: 0;
+  color: #121212;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .footer-top {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-logo,
+  .footer-contact,
+  .footer-links {
+    flex: unset;
+    margin-bottom: 20px;
+  }
+
+  .footer-contact p, .footer-links a {
+    font-size: 0.9rem;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}
