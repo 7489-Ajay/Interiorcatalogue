@@ -3,55 +3,71 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Main section */
-.home-section {
-  padding: 20px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #1e1e1e;
-  color: #fff;
+/* Animation keyframes */
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px) rotateY(30deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) rotateY(0deg);
+  }
 }
 
-/* Hero image container */
+/* Main section */
+.home-section {
+  margin-top: 71px;
+  padding: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: white;
+  color: #000;
+}
+
+/* Hero image */
 .hero-container {
-  position: relative;
   overflow: hidden;
   border-radius: 20px;
-  margin-bottom: 40px;
-  margin-top: 50px;
+  margin-bottom: 10px;
 }
 
 .hero-image {
   width: 100%;
   height: 500px;
   object-fit: cover;
-  filter: brightness(0.5);
-  transition: all 0.4s ease-in-out;
+  border-radius: 16px;
+  transition: transform 0.4s ease-in-out;
 }
 
-/* Hero text */
+.hero-image:hover {
+  transform: scale(1.02);
+}
+
+/* Hero text animation and style */
 .hero-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  background-color: #00c8fffe;
+  margin: 30px auto;
   width: 90%;
-  max-width: 900px;
-  transform: translate(-50%, -50%);
-  color: #ffffff;
-  font-size: 1.4rem;
-  line-height: 1.8;
-  font-weight: 700;
+  max-width: 1000px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.6;
   text-align: center;
-  background: rgba(0, 0, 0, 0.5); /* हल्का black background */
-  padding: 35px;
-  border-radius: 16px;
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.7);
-  text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.1);
-  transition: transform 0.3s ease-in-out;
-  perspective: 1000px;
+  color: grey;
+  opacity: 0;
+  transform: translateX(-100px) rotateY(45deg);
+  transition: transform 0.8s ease, opacity 0.8s ease;
+  will-change: transform, opacity;
 }
 
 .hero-text:hover {
-  transform: translate(-50%, -50%) scale(1.03) rotateX(4deg) rotateY(-4deg);
+  transform: scale(1.04);
+}
+
+/* Trigger animation on scroll */
+.animate-slide-in {
+  opacity: 1;
+  transform: translateX(0) rotateY(0deg);
 }
 
 /* Design gallery */
@@ -59,7 +75,7 @@ html {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 24px;
-  margin-bottom: 30px;
+  margin: 40px 0;
 }
 
 .design-item img {
@@ -76,10 +92,10 @@ html {
   box-shadow: 0 10px 28px rgba(0, 0, 0, 0.5);
 }
 
-/* Button style */
+/* Button */
 .more-btn {
   display: block;
-  margin: 0 auto 40px;
+  margin: 0 auto 20px;
   padding: 14px 30px;
   font-size: 1.1rem;
   font-weight: 600;
@@ -96,16 +112,15 @@ html {
   transform: scale(1.07);
 }
 
-/* Responsive for tablets and mobile */
+/* Responsive styles */
 @media (max-width: 768px) {
   .hero-image {
     height: 300px;
   }
 
   .hero-text {
-    font-size: 1rem;
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.45); /* mobile पर और हल्का black */
+    font-size: 1.1rem;
+    padding: 0 15px;
   }
 
   .design-item img {
@@ -119,10 +134,9 @@ html {
   }
 
   .hero-text {
-    font-size: 0.85rem;
+    font-size: 0.95rem;
     line-height: 1.4;
-    padding: 14px;
-    background: rgba(0, 0, 0, 0.4); /* smallest screens पर और हल्का black */
+    padding: 0 10px;
   }
 
   .design-gallery {
@@ -143,5 +157,3 @@ html {
 
 
 
-
-  

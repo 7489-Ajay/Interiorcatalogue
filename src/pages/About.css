@@ -1,8 +1,8 @@
 /* About Section */
 .about-section {
-    background-color: #1e1e1e;
-    color: #ffffff;
-    padding: 60px 20px;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 80px 20px;
     text-align: center;
     font-family: 'Segoe UI', sans-serif;
   }
@@ -11,7 +11,7 @@
     font-size: 2.8rem;
     font-weight: bold;
     margin-bottom: 10px;
-    color: #f5f5f5;
+    color: #000000;
     text-transform: uppercase;
     position: relative;
   }
@@ -28,7 +28,7 @@
   
   .about-tagline {
     font-size: 1.2rem;
-    color: #cccccc;
+    color: #000000;
     margin-bottom: 40px;
     font-style: italic;
     animation: fadeIn 2s ease-in-out;
@@ -63,7 +63,7 @@
   .about-card p,
   .about-card ul {
     font-size: 1rem;
-    color: #dddddd;
+    color: #000000;
     line-height: 1.7;
   }
   
@@ -76,7 +76,7 @@
   .about-footer {
     margin-top: 50px;
     font-size: 1rem;
-    color: #bbbbbb;
+    color: #0000009c;
   }
   
   .about-footer a {
@@ -113,14 +113,14 @@
   }
   
   .owner-name {
-    color: #eeeeee;
+    color: #000000;
     font-size: 1rem;
     text-align: center;
   }
   
   .owner-name span {
     font-size: 0.85rem;
-    color: #aaaaaa;
+    color: #000000be;
   }
   
   /* Animations */

@@ -8,12 +8,20 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <div className="navbar-logo">Vishal Interior</div>
-      <div className="menu-icon" onClick={() => setIsOpen(o => !o)}>
-        ☰
+      <div className="navbar-left">
+        <div className="menu-icon" onClick={() => setIsOpen(true)}>
+          ☰
+        </div>
+
+        <div className="navbar-logo">
+          <span className="text-blue">vishal</span>
+          <span className="text-black">Interior</span>
+        </div>
       </div>
 
       <ul className={`nav-links ${isOpen ? 'active' : ''}`}>
+        <span className="close-icon" onClick={() => setIsOpen(false)}>✕</span>
+
         <li>
           <NavLink to="/" end onClick={() => setIsOpen(false)}>
             <FaHome /> Home
@@ -45,3 +53,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+

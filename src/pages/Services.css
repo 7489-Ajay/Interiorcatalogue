@@ -1,6 +1,6 @@
 /* Root Section */
 .services-section {
-  background-color: #1f1f1f; /* Dark grey background */
+  background-color: #ffffff; 
   padding: 80px 20px;
   scroll-behavior: smooth;
 }
@@ -12,23 +12,21 @@
   animation: fadeIn 1.5s ease;
 }
 
-/* Titles */
 .services-title {
   font-size: 2.5rem;
   font-weight: bold;
-  color: #ffffff; /* White text */
+  color: #000000; 
   margin-bottom: 20px;
 }
 
 .services-intro {
   font-size: 1.1rem;
-  color: #cccccc; /* Light grey text */
+  color: #000000; 
   margin-bottom: 30px;
   max-width: 800px;
   margin-inline: auto;
 }
 
-/* Bullet Points */
 .services-highlights {
   list-style: none;
   padding: 0;
@@ -40,7 +38,7 @@
 .services-highlights li {
   font-size: 1rem;
   margin: 10px 0;
-  color: #dddddd;
+  color: #000000;
   position: relative;
   padding-left: 24px;
 }
@@ -49,17 +47,16 @@
   content: '✔️';
   position: absolute;
   left: 0;
-  color: #00ff88; /* Greenish checkmark */
+  color: #00ff88; 
 }
 
-/* Sub-title */
+
 .sub-title {
   font-size: 1.8rem;
   margin-bottom: 40px;
-  color: #eeeeee;
+  color: #000000;
 }
 
-/* Grid Layout */
 .services-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -67,12 +64,11 @@
   padding: 0 20px;
 }
 
-/* Service Card */
 .service-card {
-  background-color: #2c2c2c; /* Darker card background */
+  background-color: #ffffff; 
   border-radius: 20px;
   padding: 20px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 15px rgba(102, 95, 95, 0.558);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
   transform-style: preserve-3d;
   perspective: 1000px;
@@ -102,12 +98,12 @@
 .service-card h4 {
   font-size: 1.3rem;
   margin-bottom: 10px;
-  color: #ffffff;
+  color: #000000;
 }
 
 .service-card p {
   font-size: 0.95rem;
-  color: #bbbbbb;
+  color: #000000;
   line-height: 1.5;
 }
 
