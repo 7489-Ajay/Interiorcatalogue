@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 import './Home.css';
 import heroImage from '../assets/heroImage.jpg';
 import img1 from '../assets/Clinic.webp';
@@ -11,30 +11,6 @@ import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
   const navigate = useNavigate();
-  const textRef = useRef(null);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          textRef.current.classList.add('animate-slide-in');
-        }
-      },
-      {
-        threshold: 0.1,
-      }
-    );
-
-    if (textRef.current) {
-      observer.observe(textRef.current);
-    }
-
-    return () => {
-      if (textRef.current) {
-        observer.unobserve(textRef.current);
-      }
-    };
-  }, []);
 
   const handleMoreClick = () => {
     navigate('/catalogue');
@@ -46,8 +22,8 @@ const Home = () => {
         <img src={heroImage} alt="Hero Background" className="hero-image" />
       </div>
 
-      {/* Animated Hero Text */}
-      <div className="hero-text" ref={textRef}>
+      {/* Plain Hero Text */}
+      <div className="hero-text">
         <p>
           We build our customer's dream home as per his wish. Our firm started in Delhi and has been serving since 2012.
           Our team has the expertise of fine artisans and modular furniture. We make modular kitchens, wooden doors,

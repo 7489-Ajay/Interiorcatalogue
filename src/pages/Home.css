@@ -3,18 +3,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Animation keyframes */
-@keyframes slideInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-100px) rotateY(30deg);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0) rotateY(0deg);
-  }
-}
-
 /* Main section */
 .home-section {
   margin-top: 71px;
@@ -43,7 +31,7 @@ html {
   transform: scale(1.02);
 }
 
-/* Hero text animation and style */
+/* Hero text (clean, black, hover scale only) */
 .hero-text {
   background-color: #00c8fffe;
   margin: 30px auto;
@@ -53,21 +41,12 @@ html {
   font-weight: 600;
   line-height: 1.6;
   text-align: center;
-  color: grey;
-  opacity: 0;
-  transform: translateX(-100px) rotateY(45deg);
-  transition: transform 0.8s ease, opacity 0.8s ease;
-  will-change: transform, opacity;
+  color: #000;
+  transition: transform 0.3s ease;
 }
 
 .hero-text:hover {
   transform: scale(1.04);
-}
-
-/* Trigger animation on scroll */
-.animate-slide-in {
-  opacity: 1;
-  transform: translateX(0) rotateY(0deg);
 }
 
 /* Design gallery */
@@ -153,6 +132,7 @@ html {
     padding: 10px 20px;
   }
 }
+
 
 
 
