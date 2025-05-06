@@ -14,8 +14,8 @@ const Footer = () => {
 
         <div className="footer-contact">
           <h4>Contact Us</h4>
-          <p><FaPhoneAlt /> +91 98765 43210</p>
-          <p><FaEnvelope /> info@interiorspace.com</p>
+          <p><FaPhoneAlt /> +91 9557922701</p>
+          <p><FaEnvelope /> ajaysharma9870777@gmail.com</p>
         </div>
 
         <div className="footer-links">
