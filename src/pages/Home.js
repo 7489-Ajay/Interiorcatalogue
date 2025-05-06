@@ -22,22 +22,44 @@ const Home = () => {
         <img src={heroImage} alt="Hero Background" className="hero-image" />
       </div>
 
-      {/* Plain Hero Text */}
-      <div className="hero-text">
+      <div className="hero-intro">
         <p>
-          We build our customer's dream home as per his wish. Our firm started in Delhi and has been serving since 2012.
-          Our team has the expertise of fine artisans and modular furniture. We make modular kitchens, wooden doors,
-          windows, cupboards, wall paneling, and other furniture for your home and offices.
+          We build our customer's dream home as per their wish. Started in Delhi in 2012, our team combines traditional craftsmanship with modern furniture solutions.
         </p>
       </div>
 
+      {/* Section: Experience */}
+      <div className="home-experience">
+        <h2>10+ Years of Excellence</h2>
+        <p>
+          Trusted by hundreds of clients for quality and timely delivery in home and office interiors.
+        </p>
+      </div>
+
+      {/* Section: Services */}
+      <div className="home-services">
+        <h2>Our Specialties</h2>
+        <p>
+          Modular kitchens, custom wardrobes, wooden doors, wall paneling & full interior solutions — all under one roof.
+        </p>
+      </div>
+
+      {/* Image Gallery */}
       <div className="design-gallery">
-        <div className="design-item"><img src={img1} alt="Design 1" /></div>
-        <div className="design-item"><img src={img2} alt="Design 2" /></div>
-        <div className="design-item"><img src={img3} alt="Design 3" /></div>
-        <div className="design-item"><img src={img4} alt="Design 4" /></div>
-        <div className="design-item"><img src={img5} alt="Design 5" /></div>
-        <div className="design-item"><img src={img6} alt="Design 6" /></div>
+        <div className="design-item"><img src={img1} alt="Clinic" /></div>
+        <div className="design-item"><img src={img2} alt="Kitchen" /></div>
+        <div className="design-item"><img src={img3} alt="Living Room" /></div>
+        <div className="design-item"><img src={img4} alt="Gallery" /></div>
+        <div className="design-item"><img src={img5} alt="Bedroom" /></div>
+        <div className="design-item"><img src={img6} alt="Office" /></div>
+      </div>
+
+      {/* Final CTA */}
+      <div className="home-cta">
+        <h2>See More Designs</h2>
+        <p>
+          Explore our catalogue for hand-picked designs tailored to your space and style.
+        </p>
       </div>
 
       <button className="more-btn" onClick={handleMoreClick}>More Items</button>
@@ -46,3 +68,4 @@ const Home = () => {
 };
 
 export default Home;
+

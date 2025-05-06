@@ -45,20 +45,20 @@
   }
   
   .contact-link {
-    color: #ffffff;
+    color: #000000;
     text-decoration: none;
     font-size: 1.2rem;
     display: flex;
     align-items: center;
     gap: 10px;
     padding: 14px 24px;
-    border: 1px solid #444;
+    border: 1px solid #03cefc;
     border-radius: 8px;
-    background-color: #222;
+    background-color: #ffffff;
     transition: all 0.3s ease;
   }
   .contact-link:hover {
-    background-color: #007bff;
+    background-color: #007bff2e;
     transform: scale(1.05);
   }
   
